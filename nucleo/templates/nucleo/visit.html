@@ -1,0 +1,52 @@
+{% extends 'nucleo/plantilla.html' %}
+{% load static %}
+
+<!--BLOQUE TITULO-->
+{% block title %} Visitanos {% endblock %}
+
+<!-- BLOQUE CONTENIDO-->
+
+{% block contenido %} 
+<section>
+    <div class="container mt-5">
+        <div class="card visitar-bg mx-auto" style="max-width: 80%;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                <img src="{% static 'nucleo/img/mexico2.jpg'%}" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8 ">
+                <div class="card-body  visitar-text ">
+                    <h4 class="card-title text-center">Te Esperamos</h4>
+                    <h2 class="card-text text-center">Nuestro Horario</h2>
+                    <ul class="mb-5 text-left mx-auto">
+                        <li class="d-flex">
+                        Martes a Jueves
+                        <span class="ml-auto">12:00 a 23:00</span>
+                        </li>
+                        <li class="d-flex">
+                        Fin de Semana
+                        <span class="ml-auto">12:00 a 24:00</span>
+                        </li>
+                        <li class="d-flex">
+                        Lunes
+                        <span class="ml-auto">Cerrado</span>
+                        </li>
+                    </ul>
+                    <div class="row">
+                    
+                    <div class="col-lg-6">
+                    <h4 class="card-text text-center">Avd de Mexico 23</h4>
+                    <h5 class="card-text text-center">Avilés-Asturias</h5>
+                    </div>
+                    <div class="col-lg-6">
+                    <h4 class="card-text text-center">Reservas Tfn:</h4>
+                    <h5 class="card-text text-center">985002244</h5>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

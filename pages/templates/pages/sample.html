@@ -1,0 +1,23 @@
+{% extends 'nucleo/plantilla.html' %}
+{% load static %}
+
+<!--BLOQUE TITULO-->
+{% block title %}Ejemplo{% endblock %}
+
+<!-- BLOQUE CONTENIDO-->
+
+{% block contenido %} 
+<section class="page-sample mt-5 ">
+    <div class="container">
+        <div class ="row justify-content-center align-items-center sample-cart">
+            <div class="card mb-3  sample-bg">
+                <img src="{% static 'nucleo/img/mexico11.jpg'%}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title sample-text1">{{pagina.titulo}}</h5>
+                    <p class="card-text sample-text2"> {{pagina.contenido|safe}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

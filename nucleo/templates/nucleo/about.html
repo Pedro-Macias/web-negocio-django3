@@ -1,0 +1,26 @@
+{% extends 'nucleo/plantilla.html' %}
+{% load static %}
+
+<!--BLOQUE TITULO-->
+{% block title %} Historia {% endblock %}
+
+<!-- BLOQUE CONTENIDO-->
+
+{% block contenido %} 
+
+<section>
+    <div class="container mt-3">
+        <div class="card bg-transparent text-center photos-about">
+            <img class="img-fluid mx-auto d-block rounded-circle "  src="{% static 'nucleo/img/mexico1.jpg'%}" alt="">
+            <div class="card-img-overlay row justify-content-center">
+                <div class="align-self-center text-about ">
+                    <h1 class="card-title text-about1 ">Cocina Mexicana</h1> 
+                    <h3 class="card-text text-about2">Tradición familiar</h3>
+                    <p class="card-text text-about3">Traemos lo mejor de Mexico para ti.</p> 
+                    <p class="card-text d-lg-block d-none text-about3">Disfruta de la autentica comida Mexicana</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

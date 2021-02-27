@@ -1,0 +1,34 @@
+{% extends 'nucleo/plantilla.html' %}
+{% load static %}
+
+<!--BLOQUE TITULO-->
+{% block title %} Servicios {% endblock %}
+
+<!-- BLOQUE CONTENIDO-->
+
+{% block contenido %} 
+    {% for servicio in servicios %}
+    <section class="page-servicios">
+        <div class="container mt-5">
+            <div class="servicios">
+                <div class="servicios-titulo d-flex">
+                    <div class="serv-bg p-4 d-flex mr-auto rounded">
+                    <h2 class="mb-0">
+                        <span class="text-serv1 text-capitalize">{{servicio.subtitulo}}</span><br>
+                        <span class="text-serv3 text-uppercase">{{servicio.titulo}} </span>
+                    </h2>
+                    </div>
+                </div>
+                    <img class="servicios-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{ servicio.imagen.url}}" alt="">
+                    <div class="servicios-texto d-flex ml-auto">
+                        <div class="serv-bg p-4 rounded">
+                            <p class="text-serv2">{{servicio.contenido}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    {% endfor %}
+
+{% endblock %}

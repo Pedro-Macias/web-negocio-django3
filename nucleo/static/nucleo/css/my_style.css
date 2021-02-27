@@ -1,0 +1,307 @@
+body {
+    font-family: 'Acme', sans-serif;
+    background:  url("../img/fondo1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/* CABECERA */
+
+
+.cabecera-tit{
+    background:  url("../img/titulo.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    min-height: 10%;
+    width: 60%;
+    font-family: 'Fredoka One', cursive;
+}
+.cabecera-tit h1{
+    
+    font-size: 3em;
+    font-weight: bold;
+
+}
+.cabecera-tit span{
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+.cabecera-tit p{   
+    font-size: 2em;
+    font-weight: bold;
+
+}
+/* NAVEGACION */
+#mainNav {
+    background-color: rgba(25, 85, 55, 1)!important;
+    font-family: 'Fredoka One', cursive;
+}
+#mainNav .navbar-brand {
+    color: rgba(184, 35, 20, 1) !important;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    color:rgba(185, 178, 177, 1) !important;
+    
+}
+#mainNav .navbar-nav .nav-item.active .nav-link {
+    color:rgba(184, 35, 20, 1) !important;
+}
+@media (min-width: 992px) {
+    #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 1.5rem;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(185, 178, 177, 1) !important;
+    }
+    #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: rgba(184, 35, 20, 1) !important;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background-color:rgba(185, 178, 177, 0.4);
+    width: 100%;
+    margin-top: 5%;
+    bottom: 0;
+    
+}
+
+a.link{
+    color:rgba(25, 85, 55, 1);
+}
+
+a.link:hover{
+    text-decoration: none;
+    color:  rgba(184, 35, 20, 1) !important;
+}
+
+/* CONTENIDO INDEX */
+@media (min-width: 992px) {
+    .inicios .inicios-img1 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -20%;
+    max-width: 23vw;
+    }
+    .inicios .inicios-img {
+    position: relative;
+    z-index: 0;
+    max-width: 56vw;
+    }
+    .inicios .inicios-img2 {
+    position: relative;
+    z-index: 1;
+    margin-top: -20%;
+    max-width: 23vw;
+    }}
+.inicios-bg{
+    margin-top:7%;
+    margin-bottom: 7%;
+}
+.inicios-text1{
+    color:  rgba(25, 85, 55, 1)!important;
+    font-size: 4vw;
+    font-family: 'Fredoka One', cursive;
+}
+.inicios-text2{
+    color:  rgba(185, 178, 177, 1) !important;
+    font-size: 3vw;
+    font-family: 'Fredoka One', cursive;
+}
+.inicios-text3{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 2.5vw;
+    font-family: 'Fredoka One', cursive;
+}
+/* CONTENIDO ABOUT */
+.photos-about{
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.text-about{
+    margin-top: 23%;
+}
+.text-about1{
+    color:  rgba(25, 85, 55, 1)!important;
+    font-size: 4vw;
+    font-family: 'Fredoka One', cursive;
+}
+.text-about2{
+    color:  rgba(185, 178, 177, 1) !important;
+    font-size: 3vw;
+    font-family: 'Fredoka One', cursive;
+}
+.text-about3{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 1.8vw;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* SERVICIOS */
+@media (min-width: 992px) {
+    .servicios .servicios-titulo {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -2%;
+    max-width: 50vw;
+    }
+
+    .servicios .servicios-img {
+    position: relative;
+    z-index: 0;
+    max-width: 45vw;
+    }
+    .servicios .servicios-texto {
+    position: relative;
+    z-index: 1;
+    margin-top: -2%;
+    max-width: 50vw;
+    }
+}
+.serv-bg{
+    background-color: rgba(185, 178, 177, 0.6) !important;
+}
+.text-serv1{
+    color:  rgba(25, 85, 55, 1)!important;
+    font-size: 0.7em;
+    font-family: 'Fredoka One', cursive;
+}
+.text-serv2{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 0.9em;
+    font-family: 'Fredoka One', cursive;
+}
+.text-serv3{
+    color:  rgba(25, 85, 55, 1)!important;
+    font-size: 1.em;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* VISIT */
+.visitar-bg{
+    background-color: rgba(185, 178, 177, 0.6) !important; 
+    margin-top: 7%;
+    margin-bottom: 7%;
+    
+}
+.visitar-text h2{
+    background:  url("../img/titulo.jpg");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    font-family: 'Fredoka One', cursive;
+}
+.visitar-text h4{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 1.5em;
+    font-family: 'Fredoka One', cursive;
+}
+.visitar-text span, 
+.visitar-text li , 
+.visitar-text h5{
+    
+    color:  rgb(55, 83, 69)!important;
+    font-size: 1.em;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* CONTACTO */
+
+.contacto{
+    background-color: rgba(185, 178, 177, 0.6) !important; 
+    margin-bottom: 7%; 
+}
+.contacto-text1{
+    color:  rgb(55, 83, 69)!important;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Fredoka One', cursive;
+}
+.contacto-text2{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 1.0em;
+    font-family: 'Fredoka One', cursive;
+}
+.contacto-text3{
+    color:  rgb(55, 83, 69)!important;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Fredoka One', cursive;
+}
+
+.contacto-text4{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 1.3em;
+    font-family: 'Fredoka One', cursive;
+}
+.contacto-bot{
+    background-color:rgba(184, 35, 20, 1) !important;
+    color:  rgba(185, 178, 177, 1) !important; 
+    font-size: 1.em;
+    font-family: 'Fredoka One', cursive;
+}
+.contacto-mensaje{
+    background-color: rgb(55, 83, 69,0.6)!important;
+}
+.contacto-mensaje p{
+    color:  rgba(185, 178, 177, 1) !important; 
+    font-size: 0.9em;
+    font-family: 'Fredoka One', cursive;
+}
+/* BLOG */
+.blog-img{
+    width: 20%;
+    height: 20%;
+}
+.blog-bg{
+    background-color: rgba(185, 178, 177, 0.6) !important; 
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 7%; 
+}
+.blog-img1{
+    margin-top: 20%;
+}
+.blog-text1{
+    color:  rgb(55, 83, 69)!important;
+    font-size: 0.9em;
+    font-family: 'Fredoka One', cursive;
+}
+.blog-text2{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 1.8em;
+    font-family: 'Fredoka One', cursive;
+}
+.blog-text3{
+    color:  rgb(55, 83, 69)!important;
+    font-size: 1.em;
+    font-family: 'Fredoka One', cursive;
+}
+.blog-text4{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 0.8em;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* PAGINA SAMPLE */
+.sample-cart{
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%; 
+}
+.sample-bg{
+    background-color: rgba(185, 178, 177, 0.6) !important;
+}
+.sample-text1{
+    color:  rgba(184, 35, 20, 1) !important;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+}
+.sample-text2{
+    color:  rgb(55, 83, 69)!important;
+    font-size: 1.em;
+    font-family: 'Fredoka One', cursive;
+}

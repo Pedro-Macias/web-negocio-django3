@@ -1,0 +1,64 @@
+{% extends 'nucleo/plantilla.html' %}
+{% load static %}
+
+<!--BLOQUE TITULO-->
+{% block title %}Contacto{% endblock %}
+
+<!-- BLOQUE CONTENIDO-->
+
+{% block contenido %} 
+<section>
+    <div class="container">
+    <div class="card bg-transparent">
+        <h1 class=" card-title text-center contacto-text3 ">Contacto</h1>
+        <h2 class="text-center contacto-text4">Envianos sus sugerencias o dudas</h2>
+        <div class="row ">
+            <div class="col-lg-3 d-lg-block d-none">
+            <img class=" card-img rounded-circle my-3" src="{% static 'nucleo/img/mexico7.jpg'%}" alt="...">
+            </div>
+            <div class="col-lg">
+                <div class="card-body contacto">
+                {%if 'ok' in request.GET%}
+                <div class='contacto-mensaje'>
+                    <p class="text-center">Mensaje enviado correctamente</p>
+                </div>
+                {% endif%} 
+                {%if 'fail' in request.GET%}
+                <div class='contacto-mensaje'>
+                    <p class="text-center contacto-text4">Su mensaje no ha sido enviado</p>
+                </div>
+                {% endif%} 
+                <form action='' method='POST'>
+                    {% csrf_token %}
+                        <label class="contacto-text1 d-none d-sm-block">Nombre *</label>
+                        <!--<input type="text" class="form-control my-3" placeholder="Nombre *" >  -->
+                        {{form.nombre}}
+                        {{form.nombre.errors}}
+                        <label class="contacto-text1 d-none d-sm-block">Email *</label> 
+                        {{form.email}}    
+                        {{form.email.errors}}            
+                        <!-- <input type="email" class="form-control my-3" placeholder ="Email *">  -->
+                        <!--<ul class="errorlist">
+                            <li class="contacto-text2">El email no es correcto.</li>
+                        </ul> -->
+                        <label class="contacto-text1 d-none d-sm-block">Mensaje *</label>
+                        {{form.contenido}}
+                        {{form.contenido.errors}}
+                        <!--<textarea class="form-control" placeholder="Mensaje *" ></textarea>  -->
+                        
+                        <button type="submit" class="btn form-control my-3 contacto-bot ">Enviar</button>
+                        
+                    </form> 
+                
+                
+                </div>   
+            </div>
+            <div class="col-lg-3 d-lg-block d-none">
+            <img  class="card-img rounded-circle my-3" src="{% static 'nucleo/img/mexico6.jpg'%}" alt="...">
+            </div>
+        </div>  
+    </div>
+    </div>    
+</section>
+
+{% endblock %}

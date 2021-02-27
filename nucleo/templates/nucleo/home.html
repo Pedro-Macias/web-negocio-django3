@@ -1,0 +1,42 @@
+{% extends 'nucleo/plantilla.html' %}
+{% load static %}
+
+<!--BLOQUE TITULO-->
+{% block title %} Portada {% endblock %}
+
+<!-- BLOQUE CONTENIDO-->
+
+{% block contenido %} 
+
+<section class="page-inicio ">
+    <div class="container inicios-bg">
+        <div class="inicios">
+            <div class="inicios-img1 d-flex mr-auto">
+                <div class=" rounded mx-5  d-lg-block d-none">
+                    <img src="{% static 'nucleo/img/mexico3.jpg'%}" class="card-img-top d-block rounded-circle" alt="...">
+                </div>
+            </div>
+
+                <div class="card bg-transparent text-center">
+                    <img class=" inicios-img img-fluid mx-auto d-flex rounded-circle"  src="{% static 'nucleo/img/interior3.jpg'%}" alt="">
+                    <div class="card-img-overlay row justify-content-center mt-5">
+                        <div class="align-self-center ">
+                            <h1 class="card-title inicios-text1">DÉJATE SORPRENDER</h1> 
+                            <h3 class="card-text text-white inicios-text2">Te encantará</h3>
+                            <p class="card-text text-white inicios-text3">Disfruta de la mejor comida Mexicana</p>
+                            <a href="{% url 'visit'%}" class="btn btn-outline-light rounded-pill pl-5 pr-5"><h5 class="inicio-text2">Visitanos</h5></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inicios-img2 d-flex ml-auto">
+                    <div class=" mx-5 rounded  d-lg-block d-none">
+                        <img src="{% static 'nucleo/img/mexico4.jpg'%}" class="card-img-top d-block rounded-circle" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+</section>
+
+{% endblock %}
+    

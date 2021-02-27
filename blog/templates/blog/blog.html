@@ -1,0 +1,48 @@
+{% extends 'nucleo/plantilla.html' %}
+{% load static %}
+
+<!--BLOQUE TITULO-->
+{% block title %}Blog{% endblock %}
+
+<!-- BLOQUE CONTENIDO-->
+
+{% block contenido %} 
+{% for entrada in entradas%}
+<section class="page-section blog">
+        <div class="container mt-5">
+        <div class="d-lg-block d-none">
+        <img src="{% static 'nucleo/img/mexico8.jpg'%}" class=" blog-img1 float-left blog-img d-block rounded-circle " alt="...">
+        <img src="{% static 'nucleo/img/mexico9.jpg'%}" class="blog-img1 float-right blog-img d-block rounded-circle" alt="...">
+        </div>    
+            <div class="row">
+            <div class="card blog-bg">
+            <div class="col-xl-9 mx-auto">
+                <div class="text-center rounded mt-3 mb-3">
+                    <h3 class="card-subtitle blog-text1 mb-2">{{entrada.publicado|date:"SHORT_DATE_FORMAT"}}</h3>
+                    <h2 class="card-title blog-text2">{{entrada.titulo}}</h2>
+                <p class="mb-0">
+                    <img class="mx-auto d-flex rounded img-fluid mb-3" src="{{entrada.imagen.url}}" alt="">
+                </p>
+                <p class="mb-2  card-text blog-text3">{{entrada.contenido|safe}}</p>
+                <p class="mb-0  card-text blog-text4">
+                    <span class="">Publicado por <em><b>{{entrada.autor}}</b></em> en 
+                    <em>
+                        {% for categoria in entrada.categorias.all%}
+                        <a href="{% url 'categoria' categoria.id %}" class="link">{{categoria.nombre}}</a>{%if not forloop.last%},{%endif%}
+                        {% endfor %}
+                    </em>
+                
+                    </span>
+                </p>
+                </div>
+
+            </div>
+            </div>
+            </div>  
+        </div>
+        <div class=container>
+        <img src="{% static 'nucleo/img/mexico10.jpg'%}" class=" img-fluid d-block rounded" alt="...">
+        </div>
+</section>
+{%endfor%}
+{% endblock %}
